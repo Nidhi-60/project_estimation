@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "id": "c36c",
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "admin",
+      "_id": "fa51ebd2-c864-4b23-a299-a0da1a262f5b"
+    },
+    {
+      "id": "5283",
+      "email": "abc@gmail.com",
+      "username": "abc",
+      "password": "abc",
+      "_id": "9d1b2035-5cf4-46a3-b97d-2dd484affc1a"
+    },
+    {
+      "id": "ef54",
+      "email": "pqr@gmail.com",
+      "username": "pqr",
+      "password": "pqr",
+      "_id": "fcdbd24f-631d-42ff-a9e3-3b361e5ff3c0"
+    }
+  ],
+  "projects": [
+    {
+      "id": "2a8b",
+      "customer": "5283",
+      "referenceNumber": "1",
+      "projectName": "project 1",
+      "projectNumber": "1",
+      "location": "Ahmedabad",
+      "address": "Gujarat",
+      "dueDate": "2025-04-28T18:30:00.000Z",
+      "contact": "9565623156",
+      "manager": "ef54",
+      "staff": "5283",
+      "status": "completed",
+      "email": "test@gmail.com",
+      "createdAt": "28-04-2025"
+    },
+    {
+      "id": "f752",
+      "customer": "ef54",
+      "referenceNumber": "1",
+      "projectName": "project 2",
+      "projectNumber": "2",
+      "location": "Surat",
+      "address": "Ahmedabad",
+      "dueDate": "2025-04-29T18:30:00.000Z",
+      "contact": "9565236574",
+      "manager": "c36c",
+      "staff": "ef54",
+      "status": "transit",
+      "email": "test2@gmail.com",
+      "createdAt": "28-04-2025"
+    }
+  ],
+  "estimations": [
+    {
+      "id": "a5d5",
+      "title": "Test estimation",
+      "estimationData": [
+        {
+          "selectionName": "Electric",
+          "items": [
+            {
+              "title": "Lamps",
+              "description": "desc1",
+              "unit": "QTY",
+              "quantity": 100,
+              "price": 100,
+              "margin": 0
+            },
+            {
+              "title": "Wires",
+              "description": "desc2",
+              "unit": "METER",
+              "quantity": 20,
+              "price": 200,
+              "margin": 0,
+              "total": ""
+            },
+            {
+              "title": "Electric Tool",
+              "description": "desc3",
+              "unit": "BOX",
+              "quantity": 10,
+              "price": 2000,
+              "margin": 10,
+              "total": ""
+            }
+          ]
+        },
+        {
+          "selectionName": "Color Tin",
+          "total": "",
+          "items": [
+            {
+              "title": "RED",
+              "description": "desc 4",
+              "unit": "QTY",
+              "quantity": 12,
+              "price": 2000,
+              "margin": 5,
+              "total": ""
+            },
+            {
+              "title": "BLUE",
+              "description": "desc 5",
+              "unit": "QTY",
+              "quantity": 10,
+              "price": 1500,
+              "margin": 5,
+              "total": ""
+            },
+            {
+              "title": "Yellow",
+              "description": "dews6",
+              "unit": "QTY",
+              "quantity": 8,
+              "price": 1000,
+              "margin": 5,
+              "total": ""
+            }
+          ]
+        }
+      ],
+      "createdAt": "28-04-2025"
+    }
+  ]
+}

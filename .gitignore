@@ -1,0 +1,55 @@
+# Node.js
+node_modules/
+
+# Build outputs
+/dist
+/build
+
+# .env files
+.env
+.env.local
+.env.*.local
+
+# Vite
+.vite/
+
+# React Native
+# .expo/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Mac OS X
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Test and coverage results
+*.lcov
+
+# Ignore package-lock.json or yarn.lock if you're using a different lock file
+# package-lock.json
+yarn.lock
+
+# Jest / Mocha
+test-results/
+
+# Dependency directories (e.g. for package managers like pnpm)
+.pnpm/
+
+# Temporary build artifacts
+*.tgz
+
+# JetBrains IDEs
+*.iml
+.idea/
