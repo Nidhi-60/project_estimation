@@ -207,6 +207,50 @@
         }
       ],
       "createdAt": "28-04-2025"
+    },
+    {
+      "id": "8d9b",
+      "title": "Test 2 estimation",
+      "estimationData": [
+        {
+          "selectionName": "Electronic 2",
+          "items": [
+            {
+              "title": "title 1",
+              "description": "qwe",
+              "unit": "10",
+              "quantity": 10000,
+              "price": 20,
+              "margin": 10
+            },
+            {
+              "title": "title 2",
+              "description": "desc 2",
+              "unit": "50",
+              "quantity": 20000,
+              "price": 50,
+              "margin": 15,
+              "total": ""
+            }
+          ]
+        },
+        {
+          "selectionName": "Electronic 3",
+          "total": "",
+          "items": [
+            {
+              "title": "title 3 ",
+              "description": "desc 3",
+              "unit": "50",
+              "quantity": 1000,
+              "price": 20,
+              "margin": 10,
+              "total": ""
+            }
+          ]
+        }
+      ],
+      "createdAt": "28-04-2025"
     }
   ]
 }

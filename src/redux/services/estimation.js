@@ -14,7 +14,6 @@ export const estimationApi = mainReduxBaseApi.injectEndpoints({
     }),
     addEstimation: builder.mutation({
       query: (data) => {
-        console.log(data);
         return {
           url: "/estimations",
           method: "POST",
