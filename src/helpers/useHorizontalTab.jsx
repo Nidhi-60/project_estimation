@@ -10,7 +10,6 @@ import {
   SunOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { logout } from "../redux/Slice/authSlice";
 
 const useHorizontal = () => {
   const dispatch = useDispatch();
@@ -53,7 +52,7 @@ const useHorizontal = () => {
               <UserOutlined />
             </Avatar>
           </div>
-          <div>{user.username}</div>
+          <div>{user?.username || "admin"}</div>
         </div>
       ),
     },
@@ -63,9 +62,9 @@ const useHorizontal = () => {
         <div style={{ marginLeft: "16px" }}>
           <span onClick={handleThemeChange}>
             {theme === "dark" ? (
-              <SunOutlined style={{ fontSize: "24px", color: "black" }} />
+              <SunOutlined style={{ fontSize: "24px" }} />
             ) : (
-              <MoonOutlined style={{ fontSize: "24px", color: "black" }} />
+              <MoonOutlined style={{ fontSize: "24px" }} />
             )}
           </span>
         </div>

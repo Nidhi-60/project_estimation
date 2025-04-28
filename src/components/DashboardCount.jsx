@@ -11,6 +11,7 @@ import {
   SyncOutlined,
 } from "@ant-design/icons";
 import { Line } from "@ant-design/charts";
+import DashboardChart from "./DashboardChart";
 
 const DashboardCount = () => {
   const { data, isLoading } = useProjectsQuery();
@@ -29,8 +30,8 @@ const DashboardCount = () => {
       let obj = {};
 
       data.forEach((ele) => {
-        if (obj[ele.status]) {
-          [ele.status] = obj[ele.status] + 1;
+        if (obj?.hasOwnProperty(ele?.status)) {
+          obj[ele.status] = obj[ele.status] + 1;
         } else {
           obj[ele.status] = 1;
         }
@@ -50,32 +51,43 @@ const DashboardCount = () => {
 
   return (
     <>
-      <Row>
-        <h3>{t("labels.projects")}</h3>
-      </Row>
-      <Row gutter={[16, 16]}>
-        {Object.keys(projectsCount).map((ele) => {
-          return (
-            <Col xs={24} sm={12} md={4}>
-              <Card
-                bordered={false}
-                style={{
-                  textAlign: "center",
-                  background: `${BADGE_COLOR[ele]}20`,
-                  color: BADGE_COLOR[ele],
-                  height: "180px",
-                }}
-              >
-                <h3>{t(`labels.${ele}`)}</h3>
-                <span>{ICON[ele]}</span>
-                <p style={{ fontSize: "24px", fontWeight: "bold" }}>
-                  {counts[ele] || 0}
-                </p>
-              </Card>
-            </Col>
-          );
-        })}
-      </Row>
+      {Object.keys(counts).length > 0 && (
+        <>
+          <Row>
+            <h3>{t("labels.projects")}</h3>
+          </Row>
+          <Row gutter={[16, 16]}>
+            {Object.keys(projectsCount).map((ele) => {
+              return (
+                <Col xs={24} sm={12} md={4}>
+                  <Card
+                    bordered={false}
+                    style={{
+                      textAlign: "center",
+                      background: `${BADGE_COLOR[ele]}20`,
+                      color: BADGE_COLOR[ele],
+                      height: "180px",
+                    }}
+                  >
+                    <h3>{t(`labels.${ele}`)}</h3>
+                    <span>{ICON[ele]}</span>
+                    <p style={{ fontSize: "24px", fontWeight: "bold" }}>
+                      {counts[ele] || 0}
+                    </p>
+                  </Card>
+                </Col>
+              );
+            })}
+          </Row>
+
+          <Row>
+            <h3>{t("labels.projectsChart")}</h3>
+          </Row>
+          <Row>
+            <DashboardChart count={counts} />
+          </Row>
+        </>
+      )}
     </>
   );
 };

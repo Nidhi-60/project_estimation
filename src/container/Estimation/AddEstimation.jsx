@@ -111,6 +111,15 @@ const AddEstimation = () => {
           {contextHolder}
 
           <div className="form-base bg-light">
+            <div className="d-flex align-items-center mb-5">
+              <div className="header-item">{t("labels.title")}</div>
+              <div className="header-item">{t("labels.description")}</div>
+              <div className="header-item">{t("labels.unit")}</div>
+              <div className="header-item">{t("labels.quantity")}</div>
+              <div className="header-item">{t("labels.price")}</div>
+              <div className="header-item">{t("labels.margin")}</div>
+            </div>
+
             <div className="mb-5">
               <Input
                 placeholder={t("labels.title")}

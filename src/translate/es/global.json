@@ -58,7 +58,8 @@
     "transit": "Transit",
     "completed": "Completed",
     "processing": "Processing",
-    "rejected": "Rejected"
+    "rejected": "Rejected",
+    "projectsChart": "Project Chart"
   },
   "message": {
     "inputEmail": "Please input your E-mail!",

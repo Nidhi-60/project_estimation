@@ -59,7 +59,8 @@
     "transit": "ટ્રાન્ઝિટ",
     "completed": "પૂર્ણ",
     "processing": "પ્રક્રિયા કરી રહ્યું છે",
-    "rejected": "નકારેલ"
+    "rejected": "નકારેલ",
+    "projectsChart": "પ્રોજેક્ટ ચાર્ટ"
   },
   "message": {
     "inputEmail": "કૃપા કરીને તમારો ઈ-મેલ દાખલ કરો!",
